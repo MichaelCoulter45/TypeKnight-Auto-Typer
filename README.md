@@ -2,7 +2,7 @@
 
 ## What is Type Knight?
 
-Type Knight is an arcade-style 2D side-scrolling game developed by Chaikadev and available on Steam. The player controls a knight who encounters enemies and other objects with words displayed above them. The player must type the displayed words to defeat eneimes, score points, and survive.
+Type Knight is an arcade-style 2D side-scrolling game developed by Chaikadev and available on Steam. The player controls a knight who encounters enemies and other objects with words displayed above them. The player must type the displayed words to defeat enemies, score points, and survive.
 
 The game features multiple difficulty levels and is simple to understand but very difficult to master. It's also a fun tool to practice and improve typing skills.
 
@@ -12,7 +12,7 @@ I built this auto typer as a challenge and learning project to improve my Python
 
 ## How does it work?
 
-Type Knight uses a computer-vision and OCR pipeline to identify and type the words displayed in game.
+Type Knight uses a computer-vision and OCR pipeline to identify and type the words displayed in the game.
 
 1. DXCam captures frames from the Type Knight game window.
 2. OpenCV processes each frame and isolates areas that are likely to have text.
@@ -31,8 +31,8 @@ This allows Type Knight to continuously detect words on the screen and automatic
 - EasyOCR - Optical character recognition
 - PyAutoGUI - Automated keyboard input
 - PyEnchant - Dictionary validation and word suggestion
-- Tkinter - Graphical User Inerface; GUI
-- Win32GUI - Windows' window detection and management
+- Tkinter - Graphical User Interface (GUI)
+- Win32GUI - Windows window detection and management
 - Keyboard - global keyboard hotkeys
 - NumPy - image/data processing
 - Threading - Background bot execution
@@ -43,13 +43,13 @@ This allows Type Knight to continuously detect words on the screen and automatic
 
 This Type Knight script automatically detects the words displayed above enemies in the game and types them into the game without requiring the player to manually entering them.
 
-The bot can be started and paused using a keyboard toggle and includes a small GUI for configering the game window and controlling the bot.
+The bot can be started and paused using a keyboard toggle and includes a small GUI for configuring the game window and controlling the bot.
 
 ## What are its limitations?
 
 The script is functional but certainly not perfect.
 
-The largest limitation is the OCR accuracy. Type Knight uses a stylized game fontthat is not always easy for EasyOCR to recognize. As a result, the OCR system can occasionally misread individual characters or entire words.
+The largest limitation is the OCR accuracy. Type Knight uses a stylized game font that is not always easy for EasyOCR to recognize. As a result, the OCR system can occasionally misread individual characters or entire words.
 
 To compensate for this, the program includes a custom correction system that attempts to identify and correct common OCR mistakes using character substitutions, dictionary validation, and word suggestions. However, this system is still limited and cannot correct every incorrect recognition.
 
@@ -59,7 +59,7 @@ The primary area of future development is improving the text-recognition accurac
 
 ### Potential improvements include
 
-- Further optimization ofthe OpenCV preprocessing pipeline.
+- Further optimization of the OpenCV preprocessing pipeline.
 - Improving OCR accuracy with additional preprocessing techniques.
 - Expanding the OCR correction system.
 - Improving handling of difficult or ambiguous words.
@@ -68,6 +68,6 @@ The primary area of future development is improving the text-recognition accurac
 
 ## Development History
 
-This Type Knight script evolved through several iterationswhile experimenting with sceen capture, image processing, OCR, and automated keyboard input.
+This Type Knight script evolved through several iterations while experimenting with screen capture, image processing, OCR, and automated keyboard input.
 
 The project began with basic keyboard automation before progressing into screen capture, Tesseract OCR experimentation, image preprocessing, OCR correction, and eventually the current EasyOCR-based implementation.
