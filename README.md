@@ -6,6 +6,10 @@ Type Knight is an arcade-style 2D side-scrolling game developed by Chaikadev and
 
 The game features multiple difficulty levels and is simple to understand but very difficult to master. It's also a fun tool to practice and improve typing skills.
 
+## Demo
+https://github.com/user-attachments/assets/4b857617-7bd0-47fa-893e-b7a44f035bd2
+
+
 ## Why did you build it?
 
 I built this auto typer as a challenge and learning project to improve my Python skills. I enjoy learning new techniques and libraries, and Type Knight gave me an interesting problem to solve: Could I write a program that could automate a typing game?
