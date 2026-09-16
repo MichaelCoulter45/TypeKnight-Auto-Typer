@@ -1,0 +1,8 @@
+pywin32
+keyboard
+dxcam
+opencv-python
+pyautogui
+easyocr
+numpy
+enchant
